@@ -1,0 +1,59 @@
+/* Reset */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Utility Components */
+/* Same as html selector but with higher specificity */
+:root {
+	font-size: 62.5%;
+
+	/* Custom Properties (new to CSS3) */
+
+	/* Colors */
+	--primary-color: #014d4e;
+
+	--secondary-color: #ff9408;
+	--secondary-color-m: #ff94088e;
+
+	--tertiary-color: #017374;
+	--tertiary-color-m: #01737498;
+}
+
+body {
+	font-family: 'baloo Tamma 2', cursive;
+	line-height: 1.8;
+
+	display: flex;
+}
+
+/* Main Styling */
+
+/* ----- Side Nav ----- */
+aside#side-nav {
+	position: sticky;
+	top: 0;
+	left: 0;
+	height: 100vh;
+}
+
+div.side-nav__content {
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+
+	background-color: var(--primary-color);
+}
+
+div.side-nav__content--logo img {
+	width: calc(3vw + 3vh);
+
+	/* When using the above dynamic width object-fit is used to secure the intended aspect ratio of the image */
+	object-fit: cover;
+}
