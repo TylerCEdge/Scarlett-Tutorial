@@ -289,6 +289,16 @@ div.work__card img {
 	object-fit: cover;
 }
 
+seciont#about-me {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+
+	padding: 2rem;
+	background-color: var(--secondary-color);
+}
+
 /* Media Query 900 px */
 
 @media only screen and (max-width: 900px) {
